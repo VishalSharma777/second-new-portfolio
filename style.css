@@ -58,7 +58,8 @@ header {
 .logo img {
     width: 2.8rem;
     align-items: center;
-    margin-right: 0.8rem;
+    margin-right: 0.6rem;
+    margin-left:1rem;
     justify-content: center;
 }
 
@@ -416,7 +417,7 @@ height: 2rem;
 
 
 /* media query */
-@media screen  and (max-width:767px ){
+@media screen  and (max-width:363px ){
 
     .firstview{
         flex-direction:column;
@@ -430,18 +431,21 @@ height: 2rem;
         margin-top: 1.5rem;
     }
     
+    #navbtn2{
+        display: none;
+    }
     .shortabout{
-        padding: 2.3rem 0.3rem 1.3rem 4.3rem;
-        margin: 3rem 1rem 0.4rem 2rem;
+        padding: 2.3rem 0.3rem 1.3rem 2.3rem;
+        margin: 1rem 1rem 0.4rem 0.5rem;
         height: 40%;
         width: 80%;
         /* font-size: 1.5rem; */
     }
     .image{
-        width:59%;
+        width:69%;
     }
     .image img{
-    margin: 0rem 2.3rem 0.3rem 6.3rem;  
+    margin: 0rem 2.3rem 0.3rem 3.3rem;  
     width: 100%;
         height: 70%;
         
@@ -450,16 +454,18 @@ height: 2rem;
    flex-direction:column;
 }
     .secabout {
-    width: 80%;
+    width: 90%;
     height: 60vh;
-    margin: 2rem 0rem 1rem 0rem;
-    padding: 3rem 0rem 0rem 3rem;
+    margin: 2rem 0rem 8rem 0rem;
+    padding: 2rem 1rem 0rem 1rem;
     font-size: 1.5rem;
     /* background: #93c72a; */
 }
     .myimg img {
-    width: 85%;
-    height: 70vh;
+    width: 90%;
+    height: 50vh;
+    margin:0rem 1rem 0.5rem 1rem;
+    filter: drop-shadow(2px 5px 5px rgb(72, 50, 50));
   
     }
 
@@ -469,15 +475,28 @@ height: 2rem;
     .projectheader {
    
    
-    margin: 3rem 3rem 0rem 2rem;
+    margin: 2rem 0rem 0rem 0rem;
+    /* padding: 0rem; */
     /* background: #d4d94f; */
-    justify-content: space-around;
+    justify-content:space-between;
     /* border-bottom: 2px solid black; */
 
 }
+#projectbtn {
+    margin: 1.9rem 1rem 0.2rem 1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem ;
+   
+    font-size: 1rem;
+   
+   
+}
+.projectheader h1 {
+    margin: 2.2rem 1rem 0.5rem 1.5rem;
+    font-size: 1.5rem;
+}
     .project hr{
-    width: 80%;
-    margin-left: 5.8rem;
+    width: 92%;
+    margin-left: 1rem;
    
 }
     .boxes {
@@ -496,9 +515,10 @@ height: 2rem;
 .boxe-content {
     border: 2px solid green;
     padding: 12px;
-    margin: 30px;
-    width: 60%;
+    margin:1rem;
+    width: 85%;
     height:22vh;
+    text-align:justify;
     background-color: #dcd983;
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -513,10 +533,10 @@ height: 2rem;
     flex-wrap: wrap;
     
 }
-    .skillcontainer {
-    width:65%;
-    margin-left: 5rem;
-    padding:2rem 2rem;
+.skillcontainer {
+    width:85%;
+    margin-left: 1rem;
+    padding:1rem 1rem;
     background-color: #fff;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
     /* background: #7b2b2b; */
@@ -557,11 +577,11 @@ height: 2rem;
 }
     
     
-    .skill-image img{
-    width: 50vw;
+.skill-image img{
+    width: 65vw;
       margin-top:1.5rem;
     /* background: #4d9851; */
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
 }
