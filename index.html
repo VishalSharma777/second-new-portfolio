@@ -20,13 +20,16 @@
             </div>
             <div class="navmiddle">
                 <ul class="navlist ">
-                    <li>About Us</li>
-                    <li>Poject</li>
-
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#project">Poject</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                    <!-- <li>Poject</li>
+                    <li>Skill</li>
                     <select class="select">
                         <option>skill</option>
                     </select>
-                    <li>Contact Us</li>
+                    <li>Contact Us</li> -->
                 </ul>
             </div>
             <div class="navright nav_content">
@@ -37,15 +40,15 @@
     </header>
     <main class="main">
 
-        <section class="firstview">
+        <section   class="firstview">
             <div class="shortabout">
                 <h1>hi! everyone</h1>
                 <h4 id="name">This is <span>Vishal Sharma</span></h4>
                 <p>I am Ai&Ml Engineer and passionate</p>
                 <span id="element"></span>
                 <div class="btn">
-                <button class="btn">Contact</button>
-                <button class="btn">Dowload Resume</button>
+                <button class="btn" id="contactbtn">Contact</button>
+                <button class="btn" id="resumebtn" >Dowload Resume</button>
             </div>
             </div>
             <div class="image">
@@ -54,7 +57,7 @@
         </section>
 
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="secabout">
                 <h1>About Us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse a incidunt sapiente accusamus
@@ -69,7 +72,7 @@
 
         </section>
 
-        <section class="project">
+        <section id="project" class="project">
             <div class="projectheader">
                 <h1>See My <span>Project</span></h1>
                 <button id="projectbtn">Know more</button>
@@ -120,7 +123,7 @@
                 </div>
 
         </section>
-        <section class="skill">
+        <section id="skill"  class="skill">
             
                 <div class="skillcontainer">
                     <h1 class="section-title">My Hard Skills</h1>
@@ -157,17 +160,27 @@
     <footer id="footer">
         <div class="footer-content">
             <p>Contact us at contact@imvishalsharma312@gmail.com</p>
-            <p id=>Follow us on social media</p>
+            <p id=>Follow me on social media</p>
             <div class="social-icon">
                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
                <a href="https://www.instagram.com/vishalsharma_77777/"> <i class="fa-brands fa-instagram"></i></a>
                <a href="https://www.youtube.com/@mastitech5495"> <i class="fa-brands fa-youtube"></i></a>
-                <i class="fa-brands fa-square-twitter"></i>
+               <a href="https://www.linkedin.com/in/vishal-sharma77?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
     </footer>
 
+
+    <script>
+      
+        let firstviewbtn =document.getElementById("resumebtn");
+        firstviewbtn.addEventListener('click',function(){
+          alert('I have not added my resume here wait for few day');
+         //  console.log('printing my name');
+        });
+     
+           </script>
 
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -177,12 +190,10 @@
           typeSpeed:50,
         });
         
-      </script>
-
-      <script>
    
+ </script>
 
-      </script>
+
 
 </body>
 
